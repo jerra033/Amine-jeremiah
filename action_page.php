@@ -18,7 +18,6 @@ $conn = Connect();
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 </head>
-
 <body>
     <?php 
     $name = $conn->real_escape_string($_POST['name']);
