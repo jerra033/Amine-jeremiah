@@ -3,6 +3,7 @@
   <head>
     <title> customer Signup | Car Rentals </title>
   </head>
+
   <?php session_start(); ?>
   <link rel="shortcut icon" type="image/png" href="assets/img/P.png.png">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
@@ -25,6 +26,7 @@
                 <a class="navbar-brand page-scroll" href="index.php">
                    Car Rentals </a>
             </div>
+
             <!-- Collect the nav links, forms, and other content for toggling -->
 
             <?php
@@ -46,6 +48,7 @@
               <li> <a href="enterdriver.php"> Add Driver</a></li>
               <li> <a href="clientview.php">View</a></li>
 
+
             </ul>
             </li>
           </ul>
@@ -56,6 +59,7 @@
                 </ul>
             </div>
             
+
             <?php
                 }
                 else if (isset($_SESSION['login_customer'])){
@@ -76,6 +80,7 @@
                     </li>
                 </ul>
             </div>
+
 
             <?php
             }
@@ -105,6 +110,7 @@
         <!-- /.container -->
     </nav>
 
+
 <?php
 
 require 'connection.php';
@@ -122,6 +128,7 @@ function GetImageExtension($imagetype) {
     }
 }
 
+
 $car_name = $conn->real_escape_string($_POST['car_name']);
 $car_nameplate = $conn->real_escape_string($_POST['car_nameplate']);
 $ac_price = $conn->real_escape_string($_POST['ac_price']);
@@ -132,6 +139,7 @@ $car_availability = "yes";
 
 //$query = "INSERT into cars(car_name,car_nameplate,ac_price,non_ac_price,car_availability) VALUES('" . $car_name . "','" . $car_nameplate . "','" . $ac_price . "','" . $non_ac_price . "','" . $car_availability ."')";
 //$success = $conn->query($query);
+
 
 
 if (!empty($_FILES["uploadedimage"]["name"])) {
@@ -154,6 +162,7 @@ if (!empty($_FILES["uploadedimage"]["name"])) {
     } 
 
 }
+
 
 
 // Taking car_id from cars
@@ -181,6 +190,7 @@ if (!$success){ ?>
 else {
     header("location: entercar.php"); //Redirecting 
 }
+
 
 $conn->close();
 

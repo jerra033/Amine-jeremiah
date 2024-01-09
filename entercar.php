@@ -16,6 +16,7 @@ include('session_client.php'); ?>
 </head>
 <body>
 
+
       <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation" style="color: black">
         <div class="container">
@@ -36,6 +37,7 @@ include('session_client.php'); ?>
                     <li>
                         <a href="index.php">Home</a>
                     </li>
+
                     <li>
                         <a href="#"><span class="glyphicon glyphicon-user"></span> Welcome <?php echo $_SESSION['login_client']; ?></a>
                     </li>
@@ -50,6 +52,7 @@ include('session_client.php'); ?>
             </ul>
             </li>
           </ul>
+
                     </li>
                     <li>
                         <a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
@@ -61,6 +64,7 @@ include('session_client.php'); ?>
                 }
                 else if (isset($_SESSION['login_customer'])){
             ?>
+
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
                     <li>
@@ -106,6 +110,7 @@ include('session_client.php'); ?>
         <!-- /.container -->
     </nav>
 
+
     <div class="container" style="margin-top: 65px;" >
     <div class="col-md-7" style="float: none; margin: 0 auto;">
       <div class="form-area">
@@ -146,11 +151,13 @@ include('session_client.php'); ?>
     </div>
 
 
+
         <div class="col-md-12" style="float: none; margin: 0 auto;">
     <div class="form-area" style="padding: 0px 100px 100px 100px;">
         <form action="" method="POST">
         <br style="clear: both">
           <h3 style="margin-bottom: 25px; text-align: center; font-size: 30px;"> My Cars </h3>
+
 <?php
 // Storing Session
 $user_check=$_SESSION['login_client'];
@@ -198,12 +205,14 @@ if (mysqli_num_rows($result) > 0) {
     <br>
   <?php } else { ?>
   <h4><center>0 Cars available</center> </h4>
+
   <?php } ?>
         </form>
 </div>        
         </div>
     </div>
 </body>
+
 <footer class="site-footer">
         <div class="container">
             <hr>
@@ -214,4 +223,5 @@ if (mysqli_num_rows($result) > 0) {
             </div>
         </div>
     </footer>
+    
 </html>

@@ -25,6 +25,7 @@
                 <a class="navbar-brand page-scroll" href="index.php">
                    waggie's </a>
             </div>
+
             <!-- Collect the nav links, forms, and other content for toggling -->
 
             <?php
@@ -45,6 +46,7 @@
               <li> <a href="entercar.php">Add Car</a></li>
               <li> <a href="enterdriver.php"> Add Driver</a></li>
               <li> <a href="clientview.php">View</a></li>
+
 
             </ul>
             </li>
@@ -82,6 +84,7 @@
                 else {
             ?>
 
+
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
                     <li>
@@ -104,6 +107,7 @@
         </div>
         <!-- /.container -->
     </nav>
+
 
 <?php
 
@@ -137,6 +141,7 @@ else {
 $conn->close();
 
 ?>
+
 
     </body>
     <footer class="site-footer">

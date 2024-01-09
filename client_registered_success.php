@@ -18,6 +18,7 @@
     <script type="text/javascript">
       window.onscroll = function()
       {
+
         scrollFunction()
       };
 
@@ -39,6 +40,7 @@
   <nav class="navbar navbar-custom navbar-fixed-top" role="navigation" style="color: black">
         <div class="container">
             <div class="navbar-header">
+
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
                     <i class="fa fa-bars"></i>
                     </button>
@@ -66,11 +68,13 @@
               <li> <a href="enterdriver.php"> Add Driver</a></li>
               <li> <a href="clientview.php">View</a></li>
 
+
             </ul>
             </li>
           </ul>
                     </li>
                     <li>
+
                         <a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
                     </li>
                 </ul>
@@ -82,6 +86,7 @@
             ?>
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
+
                     <li>
                         <a href="index.php">Home</a>
                     </li>
@@ -91,6 +96,7 @@
                     <ul class="nav navbar-nav">
             <li><a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Garagge <span class="caret"></span> </a>
                 <ul class="dropdown-menu">
+
               <li> <a href="prereturncar.php">Return Now</a></li>
               <li> <a href="mybookings.php"> My Bookings</a></li>
             </ul>
@@ -112,12 +118,14 @@
                     <li>
                         <a href="index.php">Home</a>
                     </li>
+
                     <li>
                         <a href="clientlogin.php">Employee</a>
                     </li>
                     <li>
                         <a href="customerlogin.php">Customer</a>
                     </li>
+
                     <li>
                         <a href="#"> FAQ </a>
                     </li>
@@ -142,6 +150,7 @@ $client_phone = $conn->real_escape_string($_POST['client_phone']);
 $client_address = $conn->real_escape_string($_POST['client_address']);
 $client_password = $conn->real_escape_string($_POST['client_password']);
 
+
 $query = "INSERT into clients(client_name,client_username,client_email,client_phone,client_address,client_password) VALUES('" . $client_name . "','" . $client_username . "','" . $client_email . "','" . $client_phone . "','" . $client_address ."','" . $client_password ."')";
 $success = $conn->query($query);
 
@@ -152,6 +161,7 @@ if (!$success){
 $conn->close();
 
 ?>
+
 
 
 <div class="container">
@@ -170,6 +180,7 @@ $conn->close();
             <div class="col-sm-6">
                 <h5>© <?php echo date("Y"); ?> Car Rentals</h5>
             </div>
+            
         </div>
     </div>
 </footer>

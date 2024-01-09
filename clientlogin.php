@@ -6,8 +6,10 @@ if(isset($_SESSION['login_client'])){
 }
 ?>
 
+
     <!DOCTYPE html>
     <html>
+
 
     <head>
         <title> Employee Login | Car Rental </title>
@@ -31,6 +33,7 @@ if(isset($_SESSION['login_client'])){
                 <a class="navbar-brand page-scroll" href="index.php">
                    Car Rentals </a>
             </div>
+
             
 
             <?php
@@ -41,6 +44,7 @@ if(isset($_SESSION['login_client'])){
                         <li>
                             <a href="index.php">Home</a>
                         </li>
+
                         <li>
                             <a href="#"><span class="glyphicon glyphicon-user"></span> Welcome <?php echo $_SESSION['login_client']; ?></a>
                         </li>
@@ -48,6 +52,7 @@ if(isset($_SESSION['login_client'])){
                             <ul class="nav navbar-nav navbar-right">
                                 <li><a href="#" class="dropdown-toggle active" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> Control Panel <span class="caret"></span> </a>
                                     <ul class="dropdown-menu">
+
                                         <li> <a href="entercar.php">Add Car</a></li>
                                         <li> <a href="enterdriver.php"> Add Driver</a></li>
                                         <li> <a href="clientview.php">View</a></li>
@@ -61,6 +66,7 @@ if(isset($_SESSION['login_client'])){
                         </li>
                     </ul>
                 </div>
+
 
                 <?php
                 }
@@ -85,6 +91,7 @@ if(isset($_SESSION['login_client'])){
 
                     <?php
             }
+
                 else {
             ?>
 
@@ -119,6 +126,7 @@ if(isset($_SESSION['login_client'])){
             </div>
         </div>
 
+
         <div class="container" style="margin-top: -2%; margin-bottom: 2%;">
             <div class="col-md-5 col-md-offset-4">
                 <label style="margin-left: 5px;color: red;"><span> <?php echo $error;  ?> </span></label>
@@ -140,6 +148,7 @@ if(isset($_SESSION['login_client'])){
                                     </div>
                                 </div>
                             </div>
+
 
                             <div class="row">
                                 <div class="form-group col-xs-12">
@@ -169,6 +178,7 @@ if(isset($_SESSION['login_client'])){
             </div>
         </div>
     </body>
+
     <footer class="site-footer">
         <div class="container">
             <hr>
@@ -176,6 +186,7 @@ if(isset($_SESSION['login_client'])){
                 <div class="col-sm-6">
                     <h5>© <?php echo date("Y"); ?> Car Rentals</h5>
                 </div>
+                
             </div>
         </div>
     </footer>

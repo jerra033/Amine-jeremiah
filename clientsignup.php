@@ -12,6 +12,7 @@
     <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="assets/css/clientlogin.css">
 <body>
+
      <!-- Navigation -->
      <nav class="navbar navbar-custom navbar-fixed-top" role="navigation" style="color: black">
         <div class="container">
@@ -48,6 +49,7 @@
                         <li>
                             <a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
                         </li>
+
                     </ul>
                 </div>
                 <?php
@@ -76,6 +78,7 @@
                 else {
             ?>
 
+
                         <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                             <ul class="nav navbar-nav">
                                 <li>
@@ -92,6 +95,7 @@
                                 </li>
                             </ul>
                         </div>
+
                         <?php   }
                 ?>
                         <!-- /.navbar-collapse -->
@@ -105,6 +109,7 @@
             <p class="text-center">Get started by creating an employee account</p>
         </div>
     </div>
+    
 
     <div class="container" style="margin-top: -1%; margin-bottom: 2%;">
         <div class="col-md-5 col-md-offset-4">

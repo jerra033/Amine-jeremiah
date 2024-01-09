@@ -15,6 +15,7 @@ include('session_client.php'); ?>
 <link rel="stylesheet" type="text/css" media="screen" href="assets/css/clientpage.css" />
 </head>
 <body>
+
  <!-- Navigation -->
  <nav class="navbar navbar-custom navbar-fixed-top" role="navigation" style="color: black">
         <div class="container">
@@ -36,7 +37,8 @@ include('session_client.php'); ?>
                         <a href="index.php">Home</a>
                     </li>
                     <li>
-                        <a href="#"><span class="glyphicon glyphicon-user"></span> Welcome <?php echo $_SESSION['login_client']; ?></a>
+                   
+                    <a href="#"><span class="glyphicon glyphicon-user"></span> Welcome <?php echo $_SESSION['login_client']; ?></a>
                     </li>
                     <li>
                     <ul class="nav navbar-nav navbar-right">
@@ -76,6 +78,7 @@ include('session_client.php'); ?>
                     </li>
                 </ul>
             </div>
+
 
             <?php
             }
@@ -134,6 +137,7 @@ include('session_client.php'); ?>
 
            <button type="submit" id="submit" name="submit" class="btn btn-primary pull-right"> Add Driver</button>    
         </form>
+
       </div>
     </div>
     <div class="col-md-9" style="float: none; margin: 0 auto;">
@@ -162,6 +166,7 @@ if (mysqli_num_rows($result) > 0) {
         <th> Availability </th>
       </tr>
     </thead>
+
 
     <?PHP
       //OUTPUT DATA OF EACH ROW
@@ -198,6 +203,7 @@ if (mysqli_num_rows($result) > 0) {
         </div>
     </div>
 
+    
 </body>
 <footer class="site-footer">
         <div class="container">

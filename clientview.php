@@ -17,6 +17,7 @@ $conn = Connect();
 <link rel="stylesheet" type="text/css" media="screen" href="assets/css/clientpage.css" />
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
 <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation" style="color: black">
         <div class="container">
@@ -28,6 +29,7 @@ $conn = Connect();
                    Car Rentals </a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
+
 
             <?php
                 if(isset($_SESSION['login_client'])){
@@ -51,12 +53,14 @@ $conn = Connect();
             </ul>
             </li>
           </ul>
+
                     </li>
                     <li>
                         <a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Logout</a>
                     </li>
                 </ul>
             </div>
+
             
             <?php
                 }
@@ -111,6 +115,7 @@ $conn = Connect();
         </div>
         <!-- /.container -->
     </nav>
+
  
 <?php $login_client = $_SESSION['login_client']; 
 
@@ -126,6 +131,7 @@ $conn = Connect();
         <p class="text-center"> Hope you enjoyed our service </p>
       </div>
     </div>
+
 
     <div class="table-responsive" style="padding-left: 100px; padding-right: 100px;" >
 <table class="table table-striped">
@@ -164,6 +170,7 @@ $conn = Connect();
 
             <?php
         } ?>   
+
 
 </body>
 <footer class="site-footer">
